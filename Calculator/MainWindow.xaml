@@ -1,0 +1,32 @@
+﻿<Window x:Name="MainWindow1" x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="Calculator" Height="301" Width="453">
+    <Grid Margin="0,0,2,-21">
+        <Button x:Name="b_num1" Content="1" HorizontalAlignment="Left" Height="40" Margin="12,146,0,0"      VerticalAlignment="Top" Width="40" Click="B_num1_Click"/>
+        <Button x:Name="b_num2" Content="2" HorizontalAlignment="Left" Height="40" Margin="57,146,0,0"      VerticalAlignment="Top" Width="40" Click="B_num2_Click"/>
+        <Button x:Name="b_num3" Content="3" HorizontalAlignment="Left" Height="40" Margin="102,146,0,0"     VerticalAlignment="Top" Width="40" Click="B_num3_Click"/>
+        <Button x:Name="b_num4" Content="4" HorizontalAlignment="Left" Height="40" Margin="12,101,0,0"      VerticalAlignment="Top" Width="40" Click="B_num4_Click"/>
+        <Button x:Name="b_num5" Content="5" HorizontalAlignment="Left" Height="40" Margin="57,101,0,0"      VerticalAlignment="Top" Width="40" Click="B_num5_Click"/>
+        <Button x:Name="b_num6" Content="6" HorizontalAlignment="Left" Height="40" Margin="102,101,0,0"     VerticalAlignment="Top" Width="40" Click="B_num6_Click"/>
+        <Button x:Name="b_num7" Content="7" HorizontalAlignment="Left" Height="40" Margin="12,56,0,0"       VerticalAlignment="Top" Width="40" Click="B_num7_Click"/>
+        <Button x:Name="b_num8" Content="8" HorizontalAlignment="Left" Height="40" Margin="57,56,0,0"       VerticalAlignment="Top" Width="40" Click="B_num8_Click"/>
+        <Button x:Name="b_num9" Content="9" HorizontalAlignment="Left" Height="40" Margin="102,56,0,0"      VerticalAlignment="Top" Width="40" Click="B_num9_Click"/>
+        <Button x:Name="b_num0" Content="0" HorizontalAlignment="Left" Height="40" Margin="12,191,0,0"      VerticalAlignment="Top" Width="85" Click="B_num0_Click"/>
+        <Button x:Name="b_numDec" Content="," HorizontalAlignment="Left" Height="40" Margin="102,191,0,0"   VerticalAlignment="Top" Width="40" Click="B_numDec_Click"/>
+        <Button x:Name="b_numDiv" Content="/" HorizontalAlignment="Left" Height="40" Margin="57,11,0,0"     VerticalAlignment="Top" Width="40" Click="B_numDiv_Click"/>
+        <Button x:Name="b_numMul" Content="*" HorizontalAlignment="Left" Height="40" Margin="102,11,0,0"    VerticalAlignment="Top" Width="40" Click="B_numMul_Click"/>
+        <Button x:Name="b_numMin" Content="-" HorizontalAlignment="Left" Height="40" Margin="147,11,0,0"    VerticalAlignment="Top" Width="40" Click="B_numMin_Click"/>
+        <Button x:Name="b_numPlus" Content="+" HorizontalAlignment="Left" Height="85" Margin="147,56,0,0"   VerticalAlignment="Top" Width="40" Click="B_numPlus_Click"/>
+        <Button x:Name="b_numSum" Content="=" HorizontalAlignment="Left" Height="85" Margin="147,146,0,0"   VerticalAlignment="Top" Width="40" Click="B_numSum_Click"/>
+        <TextBox x:Name="textBox_history" HorizontalAlignment="Left" Height="162" Margin="208,0,0,82" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="219" IsEnabled="False"/>
+        <TextBox x:Name="textBox_calc" HorizontalAlignment="Left" Height="22" Margin="208,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" Text="0"/>
+        <Button x:Name="b_clear" Content="Clear history" HorizontalAlignment="Left" Height="26" Margin="345,11,0,0" VerticalAlignment="Top" Width="82" Click="B_clear_Click"/>
+        <Button x:Name="b_del" Content="Del" HorizontalAlignment="Left" Height="22" Margin="401,209,0,0" VerticalAlignment="Top" Width="26" Click="B_del_Click"/>
+        <Label x:Name="Lbl_history" Content="History" HorizontalAlignment="Left" Height="26" Margin="208,19,0,0" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>
